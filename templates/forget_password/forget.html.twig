@@ -1,0 +1,14 @@
+{% extends 'base.html.twig' %}
+{% form_theme forgetpassword 'bootstrap_4_layout.html.twig' %}
+{% block title %}Register{% endblock %}
+
+{% block body %}
+    <h1>Reset Password</h1>
+    {{error}}
+     {{form_start(forgetpassword)}}
+      {{ form_row(forgetpassword.email) }}
+    
+        
+        <button class="btn btn-success" type="submit">send</button>
+     {{ form_end(forgetpassword) }}
+{% endblock %}
